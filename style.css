@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+}
+
+/* Header */
+header {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    backdrop-filter: blur(10px);
+    animation: slideDown 1s ease;
+}
+
+/* Layout */
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    color: white;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s ease;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+/* Button */
+.main-btn {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Image */
+.preview {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(0);}
+}
